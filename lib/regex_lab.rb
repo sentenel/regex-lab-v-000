@@ -1,4 +1,9 @@
-require 'pry'
+class String
+  def match?(regex)
+    self.match(regex) ? true : false
+  end
+end
+
 def starts_with_a_vowel?(word)
   word.match?(/^[AEIOUaeiou]/)
 end
